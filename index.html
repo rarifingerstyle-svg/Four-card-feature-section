@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Four Card Feature Section - Reliable, efficient delivery powered by technology.">
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Google Fonts: Poppins (200, 400, 600) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'cyan-primary': 'var(--color-cyan)',
+            'red-primary': 'var(--color-red)',
+            'orange-primary': 'var(--color-orange)',
+            'blue-primary': 'var(--color-blue)',
+            'grey-500': 'var(--color-grey-500)',
+            'grey-400': 'var(--color-grey-400)',
+            'grey-100': 'var(--color-grey-100)',
+          },
+          fontFamily: {
+            'poppins': ['"Poppins"', 'sans-serif'],
+          },
+          boxShadow: {
+            'card': '0px 15px 30px -11px rgba(131, 166, 210, 0.5)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg-grey-100 font-poppins text-grey-400 min-h-screen flex flex-col justify-between items-center py-12 px-6 antialiased">
+
+  <main class="w-full max-w-[1110px] my-auto">
+    <!-- Header Section -->
+    <header class="text-center max-w-[540px] mx-auto mb-16 sm:mb-20">
+      <h1 class="text-[24px] sm:text-[36px] leading-snug">
+        <span class="block font-extralight text-grey-500">Reliable, efficient delivery</span>
+        <span class="block font-semibold text-grey-500">Powered by Technology</span>
+      </h1>
+      <p class="text-[15px] font-normal mt-4 leading-relaxed">
+        Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful
+      </p>
+    </header>
+
+    <!-- Cards Feature Grid -->
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center" aria-label="Feature Overview">
+      
+      <!-- Card 1: Supervisor -->
+      <article class="bg-white p-7 sm:p-8 rounded-lg shadow-card border-t-4 border-cyan-primary relative flex flex-col justify-between h-[220px] sm:h-[250px] transition-transform duration-300 hover:-translate-y-1">
+        <div>
+          <h2 class="text-grey-500 font-semibold text-[20px] mb-2">Supervisor</h2>
+          <p class="text-[13px] leading-relaxed">Monitors activity to identify project roadblocks</p>
+        </div>
+        <div class="flex justify-end mt-4">
+          <img src="./images/icon-supervisor.svg" alt="" width="64" height="64" class="w-14 h-14 sm:w-16 sm:h-16" loading="lazy">
+        </div>
+      </article>
+
+      <!-- Center Column (Team Builder & Karma) -->
+      <div class="flex flex-col gap-8">
+        
+        <!-- Card 2: Team Builder -->
+        <article class="bg-white p-7 sm:p-8 rounded-lg shadow-card border-t-4 border-red-primary relative flex flex-col justify-between h-[220px] sm:h-[250px] transition-transform duration-300 hover:-translate-y-1">
+          <div>
+            <h2 class="text-grey-500 font-semibold text-[20px] mb-2">Team Builder</h2>
+            <p class="text-[13px] leading-relaxed">Scans our talent network to create the optimal team for your project</p>
+          </div>
+          <div class="flex justify-end mt-4">
+            <img src="./images/icon-team-builder.svg" alt="" width="64" height="64" class="w-14 h-14 sm:w-16 sm:h-16" loading="lazy">
+          </div>
+        </article>
+
+        <!-- Card 3: Karma -->
+        <article class="bg-white p-7 sm:p-8 rounded-lg shadow-card border-t-4 border-orange-primary relative flex flex-col justify-between h-[220px] sm:h-[250px] transition-transform duration-300 hover:-translate-y-1">
+          <div>
+            <h2 class="text-grey-500 font-semibold text-[20px] mb-2">Karma</h2>
+            <p class="text-[13px] leading-relaxed">Regularly evaluates our talent to ensure quality</p>
+          </div>
+          <div class="flex justify-end mt-4">
+            <img src="./images/icon-karma.svg" alt="" width="64" height="64" class="w-14 h-14 sm:w-16 sm:h-16" loading="lazy">
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Card 4: Calculator -->
+      <article class="bg-white p-7 sm:p-8 rounded-lg shadow-card border-t-4 border-blue-primary relative flex flex-col justify-between h-[220px] sm:h-[250px] transition-transform duration-300 hover:-translate-y-1">
+        <div>
+          <h2 class="text-grey-500 font-semibold text-[20px] mb-2">Calculator</h2>
+          <p class="text-[13px] leading-relaxed">Uses data from past projects to provide better delivery estimates</p>
+        </div>
+        <div class="flex justify-end mt-4">
+          <img src="./images/icon-calculator.svg" alt="" width="64" height="64" class="w-14 h-14 sm:w-16 sm:h-16" loading="lazy">
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-12 text-center text-[11px] text-grey-500">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer" class="font-semibold hover:underline text-cyan-primary">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/rarifingerstyle-svg" target="_blank" rel="noopener noreferrer" class="font-semibold hover:underline text-cyan-primary">Ahmad Asrari</a>.
+  </footer>
+
+</body>
+</html>
