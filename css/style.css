@@ -16,7 +16,7 @@
 /* Accessible reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
   article {
-    transition: none !important;
-    transform: none !important;
+    transition: none;
+    transform: none;
   }
 }
